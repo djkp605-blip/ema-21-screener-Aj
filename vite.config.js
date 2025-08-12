@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: 3000
+    host: true,  // External devices (jaise mobile) ko allow karega
+    port: 3000,  // Port set kar rahe hain
   }
 })
